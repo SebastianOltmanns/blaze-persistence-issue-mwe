@@ -30,12 +30,12 @@ public class TestComponent {
                 .where("age").eq(1)
                 .orderByDesc("insertTs")
                 .setMaxResults(2)
-//                .union()
-//                .from(Cat.class)
-//                .where("age").eq(2)
-//                .orderByDesc("insertTs")
-//                .setMaxResults(2)
-//                .endSet()
+                .union()
+                .from(Cat.class)
+                .where("age").eq(2)
+                .orderByDesc("insertTs")
+                .setMaxResults(2)
+                .endSet()
                 .orderByDesc(orderBy)
                 .getResultList();
     }
